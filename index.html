@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>モノクロ画像変換システム</title>
+    <style>
+        /* スタイルの設定 */
+        
+        #input-img {
+            max-width: 500px;
+        }
+        
+        #output-img {
+            max-width: 500px;
+        }
+        
+        body {
+            background-color: #ff8c42;
+            /* メインカラー（オレンジ） */
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #fff;
+            /* 文字色 */
+        }
+        
+        p {
+            color: #222;
+            /* 文字色 */
+        }
+        
+        a {
+            color: #00a2c2;
+            /* アクセントカラー（水色） */
+        }
+        
+        a:hover {
+            color: #fff;
+            /* ホバー時の文字色 */
+        }
+        
+        button {
+            background-color: #00a2c2;
+            /* アクセントカラー（水色） */
+            color: #fff;
+            /* 文字色 */
+            border: none;
+            /* ボーダーのないボタン */
+            padding: 10px 20px;
+            /* ボタン内部の余白 */
+            border-radius: 5px;
+            /* 角丸 */
+        }
+        
+        button:hover {
+            background-color: #fff;
+            /* ホバー時の背景色 */
+            color: #00a2c2;
+            /* ホバー時の文字色 */
+            cursor: pointer;
+            /* ホバー時のカーソル */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>モノクロ画像変換システム</h1>
+
+    <label for="input-img">変換する画像を選択してください：</label>
+    <input type="file" id="input-img" accept="image/*"><br>
+
+    <button id="convert-btn">変換する</button><br><br>
+
+    <label for="output-img">変換後の画像：</label>
+    <img id="output-img"><br>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
